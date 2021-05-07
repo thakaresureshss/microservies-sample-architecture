@@ -1,0 +1,18 @@
+
+server:
+   port: 8081
+   error:
+      include-stacktrace: on_trace_param
+spring:
+   application:
+      name: movie-service
+jwt:
+   token:
+      secret: secret
+      validity: 300000
+      refresh:
+         validity: 18000000
+eureka:
+   client:
+      service-url:
+         default-zone: http://localhost:8761/eureka
